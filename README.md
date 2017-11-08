@@ -1,4 +1,6 @@
 # jekyll-bootstrap-template
 
-`` npm install
+~~~bash
+$ npm install
+~~~
 
