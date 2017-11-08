@@ -1,0 +1,15 @@
+{
+  "name": "jekyll-bootstrap-template",
+  "version": "1.0.0",
+  "description": "Blog template using Jekyll and Bootstrap",
+  "main": "app.js",
+  "scripts": {},
+  "author": "Daniel Turuș",
+  "license": "MIT",
+  "dependencies": {},
+  "devDependencies": {
+    "bootstrap": "^4.0.0-beta.2",
+    "gulp": "^3.9.1",
+    "gulp-uglify": "^3.0.0"
+  }
+}
