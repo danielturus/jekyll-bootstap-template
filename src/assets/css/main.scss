@@ -4,6 +4,52 @@
 
 @import "../scss/custom_variables";
 
-@import "../scss/bootstrap";
+// @import "../scss/bootstrap";
 
-@import "../scss/sidebar";
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+
+body {
+    font-family: 'Raleway', sans-serif;
+    letter-spacing: 0.0625em;
+}
+
+.navbar a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navbar-light .navbar-toggler {
+    color: rgba(0,0,0,.5);
+    border-color: rgba(0,0,0,.0);
+}
+
+#hero {
+    background-image: url("../img/hero.jpg");
+    min-height: calc(100vh / 10 * 9.25);
+    background-position: center center;
+    background-size: cover;
+}
+
+#drinks {
+    background-image: url("../img/bar.png");
+    background-position: center center;
+    background-size: cover;
+}
+
+// sa fac ca itemele de la containerul de mai jos sa fie aplicabile doar cand se foloseste desktop
+.container {
+    padding-left: 0 !important;
+    padding-right: 0 !important;
+}
+
+#footer {
+    background-color: $black;
+    #motto {
+        background-color: lighten($black, 10%)
+    }
+}
+
+.heading {
+    position: relative;
+    height: auto;
+}

@@ -1,0 +1,16 @@
+main:
+  - url: '#restaurant'
+    text: 'Restaurant'
+
+  - url: '#menu'
+    text: 'Menu'
+
+  - url: '#drinks'
+    text: 'Drinks'
+
+  - url: '#reservations'
+    text: 'Reservations'
+
+  - url: '#contact'
+    text: 'Contact'
+

@@ -1,0 +1,42 @@
+
+snacks:
+  name: SNACKS X SALADS
+  items:
+    - name: "Primavera Salad"
+      description: "arugula, cherry tomato, shaved almonds, shallot vinaigrette"
+      price: 8
+
+    - name: "Grilled Calamari"
+      description: "tomato sauce, lemon"
+      price: 12
+
+    - name: "Mac and Cheese"
+      description: "cheddar, gruyere, gouda, truffle oil"
+      price: 13
+      
+sandwiches:
+  name: SANDWICHES
+  items:
+    - name: "Alpine"
+      description: "fontina, gruyere, truffle oil on multigrain toast"
+      price: 10
+
+    - name: "Raleigh"
+      description: "coleslaw, barbecue sauce, pickles on sesame roll"
+      price: 13
+
+    - name: "Milanese"
+      description: "fried chicken, lettuce, tomato, mayo on focaccia"
+      price: 13
+      
+    - name: "Alpine"
+      description: "fontina, gruyere, truffle oil on multigrain toast"
+      price: 10
+
+    - name: "Raleigh"
+      description: "coleslaw, barbecue sauce, pickles on sesame roll"
+      price: 13
+
+    - name: "Milanese"
+      description: "fried chicken, lettuce, tomato, mayo on focaccia"
+      price: 13
