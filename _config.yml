@@ -1,6 +1,8 @@
 title: Your awesome title
 brand: Erol
-address: Bogholder Allé 65, 2720 Vanløse
+address: 2154 Carriage Court, Los Angeles CA
+business: Erol Romania SRL
+country: Romania
 phone: + 40 789 457 689
 email: your-email@example.com
 description: >- # this means to ignore newlines until "baseurl:"
@@ -8,9 +10,9 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-twitter_username: jekyllrb
-github_username:  jekyll
+url: "https://danielturus.us" # the base hostname & protocol for your site, e.g. http://example.com
+facebook: https://facebook.com/
+instagram: https://instagram.com/daniel_tdv
 
 # Build settings
 markdown: kramdown
@@ -22,9 +24,10 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
-  # - assets/scss
+  - assets/scss
 
 
+permalink: pretty
 
 destination: dist
 source: src

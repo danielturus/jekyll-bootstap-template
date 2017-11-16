@@ -89,11 +89,51 @@ $theme-color-interval:      8%;
 //
 // Settings for the `<body>` element.
 
+$primary-text:              rgba($black, 0.75);
+$secondary-text:            rgba($white, 0.9);
+
 $body-bg:                   $white;
-$body-color:                $gray-900;
+$body-color:                $primary-text;
+
+.secondary-text {
+  color:  $secondary-text;
+}
 
 // Links
 //
 // Style anchor elements.
 
+$link-color:                $secondary;
+$link-decoration:           none;
+$link-hover-color:          darken($link-color, 15%);
 $link-hover-decoration:     none;
+
+// Border radius
+
+$border-radius:               1rem;
+
+
+// Grid breakpoints
+//
+// Define the minimum dimensions at which your layout will change,
+// adapting to different screen sizes, for use in media queries.
+
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1300px
+);
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1300px
+)
+
+
+// Fonts
+
+

@@ -1,5 +1,6 @@
 'use strict';
 
+
 const gulp = require('gulp');
 const path = require('path');
 const swPrecache = require('sw-precache');
@@ -37,3 +38,5 @@ const writeServiceWorkerFile = (handleFetch, callback) => {
 
 gulp.task('sw:dev', cb => writeServiceWorkerFile(true, cb));
 gulp.task('sw:prod', cb => writeServiceWorkerFile(true, cb));
+
+

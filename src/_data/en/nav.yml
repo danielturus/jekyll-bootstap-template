@@ -7,9 +7,9 @@ main:
 
   - url: '#drinks'
     text: 'Drinks'
-
-  - url: '#reservations'
-    text: 'Reservations'
+    
+  - url: '#gallery'
+    text: 'Gallery'
 
   - url: '#contact'
     text: 'Contact'

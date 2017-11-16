@@ -4,43 +4,68 @@
 
 @import "../scss/custom_variables";
 
-// @import "../scss/bootstrap";
+@import "../scss/bootstrap";
 
-@import url('https://fonts.googleapis.com/css?family=Raleway:400,700');
+@import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
+
+
+html, body {
+  overflow: hidden;
+  height: 100%;
+}
+
+#site-wrapper {
+  height: 100%;
+  overflow: auto;
+}
+
+
 
 body {
     font-family: 'Raleway', sans-serif;
-    letter-spacing: 0.0625em;
 }
 
 .navbar a {
     text-transform: uppercase;
     font-weight: bold;
+    color: $secondary-text;
 }
 
-.navbar-light .navbar-toggler {
-    color: rgba(0,0,0,.5);
-    border-color: rgba(0,0,0,.0);
+
+#danielturus {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/img/hero1.jpg');
+    background-position: center center;
+    background-size: cover;
 }
 
 #hero {
-    background-image: url("../img/hero.jpg");
-    min-height: calc(100vh / 10 * 9.25);
-    background-position: center center;
-    background-size: cover;
+    min-height: 80vh;
+}
+#menu {
+    h2 {
+        margin-bottom: 0.1rem;
+    }
 }
 
 #drinks {
     background-image: url("../img/bar.png");
     background-position: center center;
     background-size: cover;
+
+    h2 {
+        margin-bottom: 0.1rem;
+    }
 }
 
 // sa fac ca itemele de la containerul de mai jos sa fie aplicabile doar cand se foloseste desktop
-.container {
+@media (min-width: 720px) {
+    .container {
     padding-left: 0 !important;
     padding-right: 0 !important;
+    }
 }
+
+
 
 #footer {
     background-color: $black;
@@ -49,7 +74,33 @@ body {
     }
 }
 
-.heading {
-    position: relative;
-    height: auto;
+
+.social-icons li {
+    display: inline-block;
+    list-style-type: none;
+    float: center;
+    padding: 0 12px;
+    img {
+        max-height: 2rem;
+        width: 2rem; 
+    };
+    img:hover{
+        opacity: 0.7;
+    }    
+}
+
+span img {
+    width: 2rem;
+}
+
+.jumbotron {
+    background-color: transparent;
+    @media (min-width: 720px) {
+        h1 {
+            font-size: 5.5rem;
+        }
+    }
+    h1 {
+        font-weight: 800 !important;
+    }
 }
