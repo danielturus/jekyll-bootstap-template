@@ -1,29 +1,23 @@
----
-
----
-
 @import "../scss/custom_variables";
 
 @import "../scss/bootstrap";
 
 @import url('https://fonts.googleapis.com/css?family=Raleway:400,700,800');
 
+@import "../scss/animations";
+
 
 html, body {
-  overflow: hidden;
+//   overflow: hidden;
   height: 100%;
+  font-family: 'Raleway', sans-serif;
 }
 
 #site-wrapper {
   height: 100%;
-  overflow: auto;
+//   overflow: auto;
 }
 
-
-
-body {
-    font-family: 'Raleway', sans-serif;
-}
 
 .navbar a {
     text-transform: uppercase;
@@ -32,15 +26,32 @@ body {
 }
 
 
-#danielturus {
-    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url('/assets/img/hero1.jpg');
+#main {
+    background: linear-gradient( rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5) ), url("{{ "/assets/img/hero1.jpg" | prepend: site.baseurl }}");
     background-position: center center;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 #hero {
     min-height: 80vh;
+    h1, h4 {
+        opacity: 0;
+        animation-name: bounceIn;
+        animation-duration: 450ms;
+        animation-timing-function: linear;
+        animation-fill-mode: forwards;
+    }  
 }
+
+h1{animation-delay: 0.2s;}
+h4{animation-delay: 0.75s;}
+
+
+.carousel-item {
+    max-height: 85vh;
+}
+
 #menu {
     h2 {
         margin-bottom: 0.1rem;
@@ -48,7 +59,7 @@ body {
 }
 
 #drinks {
-    background-image: url("../img/bar.png");
+    background: linear-gradient( rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url("{{ "/assets/img/bar.jpeg" | prepend: site.baseurl }}");
     background-position: center center;
     background-size: cover;
 
@@ -57,15 +68,12 @@ body {
     }
 }
 
-// sa fac ca itemele de la containerul de mai jos sa fie aplicabile doar cand se foloseste desktop
 @media (min-width: 720px) {
     .container {
     padding-left: 0 !important;
     padding-right: 0 !important;
     }
 }
-
-
 
 #footer {
     background-color: $black;
@@ -104,3 +112,42 @@ span img {
         font-weight: 800 !important;
     }
 }
+
+
+#map {
+    height: 25rem;
+}
+
+@media (min-width: 720px){
+    nav ul li a {
+        padding: 0.75rem;
+    }
+
+    nav ul li a,
+    nav ul li a:after,
+    nav ul li a:before {
+    transition: all .5s;
+    }
+
+
+    nav.stroke ul li a {
+    position: relative;
+    }
+    nav.stroke ul li a:after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: $secondary-text;
+    height: 1px;
+    }
+    nav.stroke ul li a:hover:after {
+    width: 100%;
+    }
+}
+
+

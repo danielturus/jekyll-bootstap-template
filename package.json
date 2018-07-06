@@ -1,11 +1,12 @@
 {
   "name": "jekyll-bootstrap-template",
   "version": "1.0.0",
-  "description": "Blog template using Jekyll and Bootstrap",
+  "description": "Blog template using Jekyll, Bootstrap and Gulp",
   "main": "app.js",
   "scripts": {
     "start": "bundle exec jekyll serve --watch --force-polling",
-    "build": "bundle exec jekyll build && gulp sw:prod"
+    "dev": "bundle exec jekyll build && gulp sw:prod",
+    "build": "bundle exec jekyll build && gulp sw:prod && gulp imagemin"
   },
   "author": "Daniel Turuș",
   "license": "MIT",
@@ -13,6 +14,13 @@
   "devDependencies": {
     "bootstrap": "^4.0.0-beta.2",
     "gulp": "^3.9.1",
+    "gulp-imagemin": "^4.0.0",
+    "imagemin": "^5.3.1",
+    "imagemin-giflossy": "^5.1.10",
+    "imagemin-mozjpeg": "^6.0.0",
+    "imagemin-pngquant": "^5.0.1",
+    "imagemin-webp": "^4.0.0",
+    "imagemin-zopfli": "^5.1.0",
     "sw-precache": "^5.2.0"
   }
 }

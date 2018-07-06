@@ -1,17 +1,15 @@
-title: Your awesome title
+title: Erol
 brand: Erol
 address: 2154 Carriage Court, Los Angeles CA
 business: Erol Romania SRL
 country: Romania
 phone: + 40 789 457 689
-email: your-email@example.com
+email: me@danielturus.us
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  Best pizza in Romania. Locally sourced. Crafted with love.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://danielturus.us" # the base hostname & protocol for your site, e.g. http://example.com
-facebook: https://facebook.com/
+url: "https://restaurant1.danielturus.us" # don't include slash; the base hostname & protocol for your site, e.g. http://example.com
+facebook: https://facebook.com
 instagram: https://instagram.com/daniel_tdv
 
 # Build settings
@@ -19,13 +17,19 @@ markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-polyglot
+  # - jekyll-minifier
+
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
   - assets/scss
+  - assets-uncompressed
 
+compress_html:
+  clippings: all
+  endings: all
 
 permalink: pretty
 
@@ -38,7 +42,39 @@ sass:
     style: compressed
 
 # Localization
+main_language: english # for meta tags
 languages: ["en", "ro"]
 default_lang: "en"
 exclude_from_localization: ["assets"]
 parallel_localization: false
+
+
+
+# Minifier
+jekyll-minifier:
+  preserve_php: true                # Default: false
+  remove_spaces_inside_tags: true   # Default: true
+  remove_multi_spaces: true         # Default: true
+  remove_comments: true             # Default: true
+  remove_intertag_spaces: true      # Default: false
+  remove_quotes: true              # Default: false
+  compress_css: true                # Default: true
+  compress_javascript: true         # Default: true
+  simple_doctype: false             # Default: false
+  remove_script_attributes: false   # Default: false
+  remove_style_attributes: false    # Default: false
+  remove_link_attributes: false     # Default: false
+  remove_form_attributes: false     # Default: false
+  remove_input_attributes: false    # Default: false
+  remove_javascript_protocol: false # Default: false
+  remove_http_protocol: false       # Default: false
+  remove_https_protocol: false      # Default: false
+  preserve_line_breaks: false       # Default: false
+  simple_boolean_attributes: false  # Default: false
+  compress_js_templates: false      # Default: false
+
+# Analytics
+
+google-site-verification: UA-106658785-2
+google-maps-api: AIzaSyDYeXdxghmZDzSig472aZ1GebSxv_RNWF4
+

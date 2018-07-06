@@ -1,0 +1,18 @@
+title: Contactează-ne!
+form:
+  name: Nume
+  email: Adresă de email
+  message: Mesaj
+  submit: Trimitere
+phone: Telefon
+location: Locație
+hours: Program
+opening-hours: 
+  - day: Luni-Joi
+    hours: 5p–11p
+
+  - day: Vineri-Sâmbătă
+    hours: 12p–11p
+
+  - day: Duminică
+    hours: 10a–11p

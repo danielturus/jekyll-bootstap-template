@@ -1,15 +1,16 @@
 main:
   - url: '#restaurant'
-    text: Restaurant
+    text: 'Restaurant'
 
   - url: '#menu'
-    text: Menu
+    text: 'Meniu'
 
   - url: '#drinks'
-    text: Drinks
+    text: 'Băuturi'
     
   - url: '#gallery'
-    text: Gallery
+    text: 'Galerie'
 
   - url: '#contact'
-    text: Contact
+    text: 'Contactează-ne'
+

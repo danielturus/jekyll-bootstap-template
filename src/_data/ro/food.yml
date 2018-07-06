@@ -1,0 +1,41 @@
+snacks:
+  name: Snaks-uri și salate
+  items:
+    - name: "Salată Primavera"
+      description: "arugula, cherry tomato, shaved almonds, shallot vinaigrette"
+      price: 8
+
+    - name: "Calamari la grătar"
+      description: "tomato sauce, lemon"
+      price: 12
+
+    - name: "Macaroane cu brânză"
+      description: "cheddar, gruyere, gouda, truffle oil"
+      price: 13
+      
+sandwiches:
+  name: Sandvișuri
+  items:
+    - name: "Alpine"
+      description: "fontina, gruyere, truffle oil on multigrain toast"
+      price: 10
+
+    - name: "Raleigh"
+      description: "coleslaw, barbecue sauce, pickles on sesame roll"
+      price: 13
+
+    - name: "Milanese"
+      description: "fried chicken, lettuce, tomato, mayo on focaccia"
+      price: 13
+      
+    - name: "Alpine"
+      description: "fontina, gruyere, truffle oil on multigrain toast"
+      price: 10
+
+    - name: "Raleigh"
+      description: "coleslaw, barbecue sauce, pickles on sesame roll"
+      price: 13
+
+    - name: "Milanese"
+      description: "fried chicken, lettuce, tomato, mayo on focaccia"
+      price: 13

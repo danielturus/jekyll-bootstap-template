@@ -1,0 +1,18 @@
+title: Contact us!
+form:
+  name: Name
+  email: Email address
+  message: Message
+  submit: Submit
+phone: Phone
+location: Location
+hours: Hours
+opening-hours: 
+  - day: M-Th
+    hours: 5p–11p
+
+  - day: F-Sa
+    hours: 12p–11p
+
+  - day: Su
+    hours: 10a–11p
